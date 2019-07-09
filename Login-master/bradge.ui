@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>bradge</class>
+ <widget class="QWidget" name="bradge">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1034</width>
+    <height>719</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>桥梁监测结果</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="resultpushButton">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>660</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>30</y>
+     <width>901</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="strainradioButton">
+      <property name="text">
+       <string>应变监测结果</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="deflectradioButton">
+      <property name="text">
+       <string>挠度监测结果</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="displaceradioButton">
+      <property name="text">
+       <string>位移监测结果</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>1131</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QTableWidget" name="strain_tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>931</width>
+       <height>611</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>日期</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>时间</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>1号传感器</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>2号传感器</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>3号传感器</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>4号传感器</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>5号传感器</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>6号传感器</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>7号传感器</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>8号传感器</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>1号传感器</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>10号传感器</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QTableWidget" name="deflect_tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>0</y>
+       <width>821</width>
+       <height>491</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>日期</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>时间</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>传感器编号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>监测结果</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>计算结果</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>单位</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QTableWidget" name="displace_tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>0</y>
+       <width>861</width>
+       <height>521</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>日期</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>时间</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>传感器编号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>监测值</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>计算结果</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>单位</string>
+      </property>
+     </column>
+    </widget>
+    <zorder>strain_tableWidget</zorder>
+    <zorder>displace_tableWidget</zorder>
+    <zorder>deflect_tableWidget</zorder>
+   </widget>
+   <widget class="QWidget" name="page_2"/>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
