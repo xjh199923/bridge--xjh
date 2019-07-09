@@ -2,4 +2,4 @@
 本监测方案主要实现主梁的应变、主梁的挠度和梁端伸缩缝的监测。每种类型的监测采用不同类型的传感器进行监测，每种监测均有多个监测点。本系统的主要目的是采集传感器的数据，并将传感器数据转换（计算）为监测物理量。
 
 登陆界面
-![image](http://github.com/xjh199923/bradge--xjh/raw/master/系统截图/x.png)
+![示例图片](http://github.com/xjh199923/bradge--xjh/raw/master/系统截图/x.png)
